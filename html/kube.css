@@ -1,0 +1,191 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        
+        background: #060c21;	
+background:  linear-gradient(to bottom, #ffff66 0%, #cc33ff 100%);
+        text-align: center;
+        
+    }
+    .contain{
+        background-color: Black;
+        width: 50%;
+        border-right: 1px solid black;
+        border-bottom: 2px solid black;
+        border-radius: 15px;
+        margin-top: 80px;
+        margin-left: 350px;
+        box-shadow: 3px 3px 9px gray;
+    }
+    .contain h1{
+        font-size: 35px;
+        padding: 10px;
+        color: red;
+        font-family: "Times New Roman", Times, serif;
+    }
+    .contain h2{
+        font-size: 50px;
+        color: salmon;
+        padding-bottom: 35px ;
+        /* "Times New Roman", Times, serif;
+         */
+         font-family: "Times New Roman", Times, serif;
+        
+    }
+    .contain form img{
+        padding-top: 25px;
+        width: 200px;
+         height: 200px;
+
+    }
+    .contain:hover{
+        border-right: 2px solid blue;
+        border-bottom: 2px solid blue;
+        box-shadow: 3px 3px 9px white;
+    }
+    #command{
+        width: 80%;
+        font-family: "Times New Roman", Times, serif;
+        font-size:20px;
+    }
+    
+    #command,#btn{
+        
+        border: none;
+        border: 1px solid rgba(252,70,107,1);
+        padding: 10px;
+        
+        margin: 5px;
+        border-radius: 5px;
+    }
+    button{
+        margin-top: 2px;
+        margin-bottom: 25px;
+        font-size: 18px;
+        background: blue;
+        width: 25%;
+        color: white;
+        border: 2px solid black;
+        font-weight: bold;
+        padding: 10px;
+
+    }
+    button:hover{
+        background-color: rgb(118, 118, 184);
+        color: white;
+        border: 2px solid red;
+        cursor: pointer;
+    }
+    #command:focus{
+        outline: none;
+        border: none;
+        
+        border-right:2px solid rgba(252,70,107,1) ;
+        border-top:2px solid rgba(252,70,107,1); ;
+        border-radius: 10px;
+        box-shadow: 2px 2px 4px #CCC;
+    }
+    
+   
+    
+    @media screen and (max-width:990px) {
+        .contain{
+            margin-top: 200px;
+        
+        margin-left: 220px;
+        width: 40%;
+        height: 40%;
+
+        }
+        .contain h1{
+            font-size: 20px;
+        }
+        .contain h2{
+            font-size: 20px;
+        }
+        .contain form img{
+            width: 100px;
+            height: 100px;
+        }
+        .contain form #command{
+            font-size: 10px;
+        }
+        #btn{
+            width: 80%;
+            font-size: 20px;
+        }
+    }
+    
+    @media screen and (max-width:670px) {
+        .contain{
+            margin-left: 170px;
+        }
+        .contain h1{
+            font-size:15px
+        }
+        .contain h2{
+        font-size: 15px;
+        padding-bottom: 10px;
+        }
+        .contain form img{
+            width: 100px;
+            height: 100px;
+        }
+        .contain form #command{
+            font-size: 10px;
+        }
+    }
+    @media screen and (max-width:550px) {
+        .contain{
+            margin-left: 100px;
+            margin-top: 100px;
+            width: 50%;
+        }
+        .contain h1{
+            font-size:10px
+        }
+        .contain h2{
+        font-size: 10px;
+        padding-bottom: 10px;
+        }
+        .contain form img{
+            width: 100px;
+            height: 100px;
+        }
+        .contain form #command{
+            font-size: 10px;
+        }
+        #btn{
+            padding: 10px;
+            font-size: 10px ;
+            width: 80px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .contain{
+            margin-left: 250px;
+            margin-top: 350px;
+            width: 50%;
+        }
+        
+    }
+    @media screen and (max-width:540px) {
+        .contain{
+            margin-left: 150px;
+            margin-top: 200px;
+            width: 50%;
+        }
+        
+    }
+    @media screen and (max-width:280px) {
+        .contain{
+            margin-left: 80px;
+            margin-top: 200px;
+            width: 50%;
+        }
+        
+    }
+    
