@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kube.css">
+
+    <title>Kubernetes</title>
+   
+</head>
+
+<body>
+<script>
+function kube() {
+var ch = document.getElementById("k8s1").value
+var k2 = document.getElementById("k8s2").value
+var k3 = document.getElementById("k8s3").value
+var k4 = document.getElementById("k8s4").value
+var k5 = document.getElementById("k8s5").value
+var k6 = document.getElementById("k8s6").value	
+var xhr = new XMLHttpRequest();
+
+xhr.open("POST", "http://localhost/cgi-bin/kube.py?ch=" + ch + "&dname=" + k6 + "&port=" + k3 + "&image=" + k4 + "&rno=" + k5 + "&pname=" + k2 ,true);
+xhr.send();
+
+xhr.onload = function() {
+    var output = xhr.responseText;
+    document.getElementById("out").innerHTML = output;
+}
+}
+</script>
+    <div class="container">
+	<div class="contain">
+            <form action="http://localhost/cgi-bin/kube.py" method="POST"   >
+        <img src="kube.gif" alt="kube" size="50">
+        <h2>******Kubernetes******</h2>
+        <h1>How Can I Help You ??</h1>
+        
+            <input id="k8s1" type="text"  placeholder="Enter your requirements"  name="ch" size="70" >
+	    <br>
+	    <br>
+	    <h1>Fill The Below Attributes As Per Your Requirements</h1>
+
+	    <input id="k8s2" type="text" Placeholder="Enter Pod Name" name="pname" size="70">
+	    <br>
+	    <br>
+	    <input id="k8s6" type="text" Placeholder="Enter deployment Name" name="dname" size="70">
+
+
+            <br>
+            <br>
+	    <input id="k8s3" type="text" Placeholder="Enter Port Number" name="port" size="70">
+	    <br>
+	    <br>
+	     <input id="k8s4" type="text" Placeholder="Enter Image Name" name="image" size="70">
+	     <br>
+	     <br>
+	      <input id="k8s5" type="text" Placeholder="Enter Replica Number" name="rno" size="70">
+
+
+	    <br>
+	    <br>
+            <button onmouseover="kube()" type="submit">Display</button>
+        </form>
+    </div>
+    <br>
+    <br>
+    </div>
+    <div class='op'>
+    <h1>******Check Your Output Here******</h1>
+    </div>
+    <pre>
+    <div class="myDiv" id='out'>
+    </div>
+    </pre>
+
+</body>
+</html>
